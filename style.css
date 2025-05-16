@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+body{
+    background: #f5f5f5;
+}
+html {
+    overflow-y: scroll;
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 80px;
+
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+    padding-top: 440px; 
+}
+.container h3{
+    font-size: 1.3rem;
+}
+nav {
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 0.35rem;
+    position: sticky; 
+    top: 0;
+    z-index: 999; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
+}
+.mainFont{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #2b8fff;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #2b8fff;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    text-align: center;
+}
+.header-text h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: white;
+    display: block;
+    width: 250px;
+    padding: 5px 10px;
+    border-radius: 4px;
+
+}
+.header-text p{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(85, 83, 83);
+    color: #ffffff;
+    display: inline-block;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+/*about section*/
+#about {
+      padding: 80px 20px;
+      margin-top: 60px;
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+.about-col-1 {
+      flex-basis: 35%;
+      text-align: center;
+    }
+
+.about-col-1 img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      transform: scale(1);
+    }
+
+    .about-col-1 img:hover{
+      transform: scale(1.05);
+    }
+    .about-col-2 {
+      flex-basis: 60%;
+    }
+
+    .subtitle {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      color: tomato;
+      opacity: 0.8;
+    }
+
+    /* Tabs */
+    .tab-title {
+      display: flex;
+      margin-bottom: 20px;
+      position: relative;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .tab-link {
+      margin-right: 40px;
+      padding: 10px 5px;
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .tab-link.active-link {
+      color: #2b8fff;
+    }
+
+    .tab-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      height: 3px;
+      background: #2b8fff;
+      transition: 0.4s ease;
+    }
+
+    .tab-link.active-link::after {
+      width: 100%;
+    }
+
+    /* Tab content */
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active-content {
+      display: block;
+       min-height: 60px;
+    }
+
+    .tab-content ul {
+      padding-left: 20px;
+    }
+
+    .tab-content ul li {
+      list-style: none;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .tab-content ul li span {
+      color: tomato;
+      margin-right: 10px;
+    }
+
+    .contact-links {
+      text-decoration: none;
+      color: #665353;
+    }
+
+    #profiles ul {
+        margin-left: 20px;
+      display: flex;
+      gap: 1.5rem;
+      padding-left: 0;
+    }
+
+    #profiles ul li {
+      list-style: none;
+      font-size: 1.4rem;
+    }
+
+    #linkedin { color: #0077B5; }
+    #github { color: #6e5494; }
+    #facebook { color: #1877F2; }
+    #youtube { color: #FF0000; }
+
+  /*Education section*/
+.education {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.edu-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.edu-list div {
+  background: #fff; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  color: #333;
+  padding: 40px;
+  border-radius: 10px;
+  transition: all 0.3s ease; 
+  transform: scale(1); 
+}
+
+.edu-list div:hover {
+  background: #b2daed;
+  transform: scale(1.05); 
+} 
+
+/*Award section*/
+.awards {
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+}
+
+.awards .container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.awards h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.award-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.award-card {
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+  border: 2px solid transparent;
+}
+
+
+.award-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  border: 2px solid #2b8fff;
+}
+
+.award-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.award-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #222;
+  padding-left: 3px;
+}
+
+.award-card p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #444;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.view-more {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2b8fff;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+.view-more span {
+  font-size: 1.1rem;
+}
+
+/*Skills section*/
+#skills {
+  background: #f9f8f6;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#skills .container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#skills h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+#skills h2 span {
+  color: #c0392b;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.skill .label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+  font-weight: 500;
+}
+
+.progress {
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  background-color: #c0392b;
+  width: 0%; /* Start at 0% */
+  transition: width 1.5s ease-in-out;
+  border-radius: 25px;
+}
+
+/*Round shape skills*/
+section#project-updates {
+      padding: 80px 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    #project-updates h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .circle-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .circle {
+      position: relative;
+      width: 150px;
+      height: 150px;
+    }
+
+    .circle svg {
+      transform: rotate(-90deg);
+      width: 100%;
+      height: 100%;
+    }
+
+    .circle circle {
+      fill: none;
+      stroke-width: 12;
+      stroke-linecap: round;
+    }
+
+    .circle .bg {
+      stroke: #eee;
+    }
+
+    .circle .progress {
+      stroke: #2b8fff;
+      stroke-dasharray: 440;
+      stroke-dashoffset: 440;
+      transition: stroke-dashoffset 1.5s ease-in-out;
+    }
+
+    .circle .percentage {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .circle .label {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #444;
+    }
+
+
+    /* Publications Section */
+.publications {
+  background: #f5f7fa;
+  padding: 80px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.publications .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.publications .subtitle {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.publications .subtitle::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #2b8fff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.pub-list > div {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  border-left: 5px solid #2b8fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.pub-list > div:hover {
+  transform: translateY(-5px);
+}
+
+.pub-list h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.4rem;
+  color: #222;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.pub-list h4 {
+  font-size: 1.1rem;
+  color: #2b8fff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.pub-list p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/*Project section*/
+.projects {
+  padding: 30px 20px;
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  color: #111;
+}
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  max-width: 320px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.project-info p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.project-btn {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 0.8rem;
+  display: inline-block;
+  background: tomato;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
