@@ -216,6 +216,7 @@ nav ul li a:hover::after{
     #github { color: #6e5494; }
     #facebook { color: #1877F2; }
     #youtube { color: #FF0000; }
+    #instagram{color: #C13584}
 
   /*Education section*/
 .education {
@@ -526,7 +527,7 @@ section#project-updates {
 }
 
 .project-card {
-  background: #fff;
+   background: #fff;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
   overflow: hidden;
@@ -535,8 +536,6 @@ section#project-updates {
   display: flex;
   flex-direction: column;
 }
-
-
 .project-card img {
   width: 100%;
   height: auto;
@@ -545,8 +544,12 @@ section#project-updates {
 
 .project-info {
   padding: 20px;
+  background: transparent;
+  transition: background 0.4s ease;
 }
-
+.project-card:hover .project-info {
+  background-color: #cfcbcb;
+}
 .project-info h3 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.1rem;
@@ -571,6 +574,101 @@ section#project-updates {
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+}
+
+/*Contact section*/
+.contact-section {
+  background: url('images/contact\ back.jpg') no-repeat center center / cover;
+  background-attachment: fixed;
+  padding: 100px 20px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 4px;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1 1 45%;
+  min-width: 280px;
+}
+.contact-right{
+  margin-left: 4rem;
+}
+.contact-left h2,
+.contact-right h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.contact-form button {
+  padding: 10px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.contact-right p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+  font-size: 14px;
+}
+.footer p b{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
