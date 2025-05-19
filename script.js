@@ -107,3 +107,13 @@
 
   window.addEventListener('scroll', animateCircularBars);
   window.addEventListener('load', animateCircularBars);
+
+
+
+  //mobile manu button
+  const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
