@@ -111,17 +111,10 @@
 
 
   //mobile manu button
-  const menuToggle = document.getElementById('menu-toggle');
+const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav-links');
-const menuIcon = document.getElementById('menu-icon');
 
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('show');
-
-    // Change icon based on menu state
-    if (navLinks.classList.contains('show')) {
-        menuIcon.innerHTML = '&#10005;'; // Cross (×)
-    } else {
-        menuIcon.innerHTML = '&#9776;'; // Hamburger (☰)
-    }
+    menuToggle.classList.toggle('open');
 });
