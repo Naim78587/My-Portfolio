@@ -10,22 +10,14 @@ body{
 html {
     overflow-y: scroll;
 }
-.header {
-    width: 100%;
-    height: 100vh;
-    background-image: url('images/background.jpg');
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 80px;
-
-    display: flex;
-    align-items: flex-start; 
-    justify-content: center;
-    padding-top: 440px; 
-}
 .container h3{
     font-size: 1.3rem;
 }
+.mainFont{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #2b8fff;
+}
+/* Nav Section */
 nav {
     width: 100%;
     display: flex;
@@ -38,10 +30,6 @@ nav {
     top: 0;
     z-index: 999;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-.mainFont{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #2b8fff;
 }
 
 nav ul {
@@ -81,9 +69,23 @@ nav ul li a:hover::after{
     cursor: pointer;
     color: #2b8fff;
 }
-
+.menu-toggle span {
+    transition: 0.3s ease;
+}
 /*Header section*/
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 80px;
 
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+    padding-top: 440px; 
+}
 .header-text h3{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
