@@ -744,6 +744,9 @@ section#project-updates {
 
 /* Responsive for tablets and mobile */
 @media (max-width: 768px) {
+   .header {
+        background-image: url('images/background_mobile.jpg');
+    }
     .menu-toggle {
         display: block;
     }
