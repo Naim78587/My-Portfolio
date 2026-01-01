@@ -993,6 +993,37 @@ section#project-updates {
     gap: 25px;
   }
 
+  .circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* more space between circles */
+  }
+
+  .circle-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .circle-skill svg {
+    width: 140px;
+    height: 140px;
+  }
+
+  .circle-skill .percentage-text {
+    font-size: 18px;
+  }
+
+  .circle-skill .skill-name {
+    margin-top: 14px;   /* pushes label down */
+    font-size: 14px;
+    text-align: center;
+    white-space: normal;
+    line-height: 1.4;
+  }
+
   /* ---------- Education ---------- */
   .edu-list {
     grid-template-columns: 1fr;
