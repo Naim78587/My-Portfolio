@@ -901,45 +901,163 @@ section#project-updates {
 
 /* Responsive for tablets and mobile */
 @media (max-width: 768px) {
-   .header {
-        background-image: url('images/background_mobile.jpg');
-    }
-    .menu-toggle {
-        display: block;
-    }
-    nav {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+
+  /* ---------- Global Fixes ---------- */
+  body {
+    overflow-x: hidden;
   }
-    nav h3 {
-        margin-bottom: 0.5rem;
-    }
-    nav ul {
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  p {
+    line-height: 1.6;
+    word-break: break-word;
+  }
+
+  /* ---------- Navbar ---------- */
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    padding: 0.6rem 1rem;
+  }
+
+  nav ul {
     flex-direction: column;
     align-items: flex-start;
     display: none;
     position: absolute;
-    top: 100%; /* just below nav */
+    top: 100%;
     left: 0;
     width: 100%;
-    background-color: rgba(255,255,255,0.9);
-    padding: 1rem 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
+    background: #fff;
+    padding: 1rem;
+  }
 
-    nav ul.show {
+  nav ul.show {
     display: flex;
-}
+  }
 
-    nav ul li {
-        margin: 10px 0;
-    }
+  nav ul li {
+    margin: 10px 0;
+  }
 
-    .reel-track img {
-    width: 200px;
-    height: 130px;
+  /* ---------- Header ---------- */
+  .header {
+    height: 100vh;
+    padding-top: 300px;
+    background-image: url('images/background_mobile.jpg');
+  }
+
+  .header-text h3 {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  .header-text p {
+    font-size: 16px;
+  }
+
+  /* ---------- About Section ---------- */
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .about-col-2 {
+    text-align: left;
+  }
+
+  .tab-title {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* ---------- Skills ---------- */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ---------- Circular Skills ---------- */
+  .circle-container {
+    gap: 25px;
+  }
+
+  /* ---------- Education ---------- */
+  .edu-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* ---------- Awards ---------- */
+  .award-list {
+    grid-template-columns: 1fr;
+  }
+
+  .award-card {
+    width: 100%;
+  }
+
+  /* ---------- Publications ---------- */
+  .pub-list > div {
+    padding: 20px;
+  }
+
+  .pub-list h2 {
+    font-size: 1.1rem;
+  }
+
+  /* ---------- Projects ---------- */
+  .project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+
+  /* ---------- Gallery ---------- */
+  .reel-track img {
+    width: 180px;
+    height: 120px;
+  }
+
+  /* ---------- Resume ---------- */
+  .resume-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* ---------- Contact Section ---------- */
+  .contact-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact-right {
+    margin-top: 30px;
+  }
+
+  /* ---------- Footer ---------- */
+  .footer {
+    font-size: 13px;
+    padding: 0 10px;
   }
 }
